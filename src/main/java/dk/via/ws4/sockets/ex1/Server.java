@@ -30,6 +30,7 @@ public class Server {
 
                 if (!connectMsg.equals("connect")){
                     writer.println("Disconnected.");
+                    writer.flush();
                     System.out.println("Sent to "+client+": Disconnected");
                     clientSocket.close();
                     System.out.println("Client disconnected: "+client);

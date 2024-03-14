@@ -63,7 +63,7 @@ public class Client {
             System.out.println("Received from server: "+response);
 
             //Checks if response is "Approved"
-            return response.equals("Approved");
+            return response.equalsIgnoreCase("Approved");
         }catch (IOException e){
             e.printStackTrace();
             throw e;

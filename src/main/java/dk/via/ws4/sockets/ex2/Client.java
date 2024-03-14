@@ -55,6 +55,6 @@ public class Client {
     public void sendMessage(String message) throws IOException{
         writer.println(message);
         writer.flush();
-        System.out.println("Sent tp server: "+message);
+        System.out.println("Sent to server: "+message);
     }
 }

@@ -15,6 +15,8 @@ public class StartClient {
             client.sendMessage("Come to VIA");
             client.sendMessage("It's me, Tomas from 2X class");
 
+            client.close();
+
         }catch (IOException e){
             e.printStackTrace();
         }

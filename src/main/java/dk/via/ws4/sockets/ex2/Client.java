@@ -47,6 +47,9 @@ public class Client {
             writer.flush();
             System.out.println("Sent to server: disconnect");
 
+            String connectionStatus = reader.readLine();
+            System.out.println(connectionStatus);
+
             socket.close();
         }catch (IOException e){
             e.printStackTrace();
